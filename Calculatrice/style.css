@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    min-height: 370px;
+    min-width: 450px;
+    background: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+#result {
+    position: absolute;
+    top: 5%;
+    width: 300px;
+    font-size: 2em;
+    padding: 10px;
+    background: white;
+    text-align: right;
+    height: 50px;
+}
+button {
+    min-height: 50px;
+    min-width: 50px;
+}
+.numbers {
+    margin-top:100px;
+    height: 250px;
+    width: 250px;
+    display: grid;
+    grid-template-areas: 
+    "sept huit neuf"
+    "quatre cinq six"
+    "un deux trois"
+    "zero zero point"
+
+
+}
+.operators {
+    margin-top:100px;
+    height: 250px;
+    width: 150px;
+    display: grid;
+    grid-template-areas: 
+    "reset reset"
+    "divide multiplicate"
+    "minus plus"
+    "equal plus"
+}
+#neuf {
+    grid-area: neuf;
+}
+#huit {
+    grid-area: huit;
+}
+#sept {
+    grid-area: sept;
+}
+#six {
+    grid-area: six;
+}
+#cinq {
+    grid-area: cinq;
+}
+#quatre {
+    grid-area: quatre;
+}
+#trois {
+    grid-area: trois;
+}
+#deux {
+    grid-area: deux;
+}
+#un {
+    grid-area: un;
+}
+#zero {
+    grid-area: zero;
+}
+#dot {
+    grid-area: point;
+}
+#equal {
+    grid-area: equal
+}
+#plus {
+    grid-area: plus;
+}
+#minus{
+    grid-area: minus;
+}
+#divide {
+    grid-area: divide;
+}
+#multiplicate {
+    grid-area: multiplicate;
+}
+#reset {
+    grid-area: reset;
+}
